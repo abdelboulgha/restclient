@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Core palette -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- App brand colors (inspired by the screenshot) -->
+    <color name="brand_primary">#6750A4</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary_container">#EADDFF</color>
+    <color name="brand_on_primary_container">#21005D</color>
+
+    <color name="brand_secondary">#625B71</color>
+    <color name="brand_on_secondary">#FFFFFF</color>
+    <color name="brand_secondary_container">#E8DEF8</color>
+    <color name="brand_on_secondary_container">#1D192B</color>
+
+    <color name="brand_surface">#FFFBFE</color>
+    <color name="brand_on_surface">#1C1B1F</color>
+    <color name="brand_outline">#79747E</color>
+
+    <!-- Card and chip helpers -->
+    <color name="card_bg">#F6F2FF</color>
+    <color name="chip_bg">#EFE7FF</color>
 </resources>

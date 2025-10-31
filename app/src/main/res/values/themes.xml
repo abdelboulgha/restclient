@@ -1,9 +1,39 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Restclient" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Base application theme with custom color scheme -->
+    <style name="Base.Theme.Restclient" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorOnSecondary">@color/brand_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/brand_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/brand_on_secondary_container</item>
+
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="colorOnSurface">@color/brand_on_surface</item>
+        <item name="colorOutline">@color/brand_outline</item>
+
+        <!-- Component styles -->
+        <item name="materialCardViewStyle">@style/App.Card</item>
+        <item name="materialButtonStyle">@style/App.Button</item>
     </style>
 
     <style name="Theme.Restclient" parent="Base.Theme.Restclient" />
+
+    <!-- Reusable component styles -->
+    <style name="App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="App.Button" parent="Widget.Material3.Button">
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!-- Using per-view attributes for FAB to avoid resource resolution issues -->
 </resources>
